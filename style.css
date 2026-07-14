@@ -8,6 +8,8 @@
     height: 5rem;
     display: flex;
     align-items: center;
+    padding: 0.2rem;
+    gap: 2rem;
 }
 
 /* Toolbox-Designs */
@@ -21,14 +23,28 @@
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;;
 
+}
+
+.toolbox-filter-colors:hover {
+    background-color: #505050; /* Slightly lighten on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 .color-box{
     width: 3rem ;
     height: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.2s ease; /* Hover animation */
     /* background-color: black;    */
 
+}
+
+.color-box:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
 }
 
 /* Filter-Colors */
@@ -55,7 +71,9 @@
     height: 3.5rem;
     width: 9rem;
     margin-left: 4rem;
-    
+    border-radius: 0.5rem;
+    overflow: hidden;
+
     display: flex;
 }
 
@@ -67,6 +85,11 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease; /*Add hover transition*/
+}
+
+.action-btn-cont > *:hover {
+    background-color: #505050; /* Highlight on hover */
 }
 
 /* Modal Container */
@@ -78,6 +101,9 @@
     position: absolute;
     top:30% ;
     left:25%;
+    border-radius: 0.5rem; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    overflow: hidden; /* Prevent overflow */
 
 }
 
@@ -88,7 +114,9 @@
     resize: none;
     border: none;
     outline: none;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem; /* Add padding for text */
+    line-height: 1.5; /* Improve readability */
  }
 
  .priority-color-cont{
@@ -98,12 +126,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;    
+    justify-content: space-evenly; 
+    padding: 1rem 0; /* Add padding for spacing */   
  }
 
  .priority-color{
     height: 3rem;
-    width: 5rem;    
+    width: 5rem; 
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */   
  }
 
  .active{
