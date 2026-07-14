@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-cont{
+    background-color: #4b4b4b;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Toolbox-Designs */
+.toolbox-filter-colors{
+    background-color: #3d3d3d;
+    height: 3.5rem;
+    width: 18rem;
+    margin-left: 4rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+.color-box{
+    width: 3rem ;
+    height: 1.5rem;
+    /* background-color: black;    */
+
+}
+
+/* Filter-Colors */
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.black{
+    background-color: black;
+}
+
+
+/* Action-buttons */
+.action-btn-cont{
+    background-color: #3d3d3d;
+    height: 3.5rem;
+    width: 9rem;
+    margin-left: 4rem;
+    
+    display: flex;
+}
+
+.action-btn-cont>*{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Modal Container */
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    display: none;
+    position: absolute;
+    top:30% ;
+    left:25%;
+
+}
+
+.text-area{
+    height: 100%;
+    width: 70%;
+    background-color: #dfe4ea;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+ }
+
+ .priority-color-cont{
+    height: 100%;
+    width:30%;
+    background-color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+ }
+
+ .priority-color{
+    height: 3rem;
+    width: 5rem;    
+ }
+
+ .active{
+    border:4px solid coral;
+    box-shadow: 0 0 6px coral;
+ }
+
+ /* Ticket Design */
+
+ .main-cont{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    padding: 2rem;
+   
+
+ }
+
+ .ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: coral;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+ }
+
+ .ticket-color{
+    /* background-color: black; */
+    height: 2rem;
+ }
+
+ .ticket-id{
+    background-color: yellow;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem; 
+ }
+
+ .ticket-lock{
+    display : flex;
+    justify-content: flex-end;
+    margin-top: 85px;
+    margin-right: 5px;
+    font-size: 1.2em;
+ } 
